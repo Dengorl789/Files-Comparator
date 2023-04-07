@@ -10,14 +10,14 @@ import java.util.concurrent.Callable;
         description = "Compares two configuration files and shows a difference.")
 public class App implements Callable<Integer> {
     @Parameters(description = "path to first file")
-    private String filepath1;
+    private static String filepath1;
     @Parameters(description = "path to second file")
-    private String filepath2;
+    private static String filepath2;
 
     @CommandLine.Option(names = {"-f", "--format"},
             description = "output format: stylish, plain, json, no-format [default: ${DEFAULT-VALUE}]",
             defaultValue = "stylish")
-    private String format;
+    private static String format;
 
     @Override
     public Integer call() throws Exception {
