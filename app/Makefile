@@ -4,3 +4,5 @@ run-dist:
 help:
 	./build/install/app/bin/app -h
 
+lint:
+	gradle checkstyleMain checkstyleTest
