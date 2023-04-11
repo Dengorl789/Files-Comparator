@@ -1,17 +1,5 @@
-# Default ignored files
-/shelf/
-/.idea/workspace.xml
-../.idea
-app/.gradle
 .idea
-build
-../.idea/compiler.xml
-../.idea/gradle.xml
-../.idea/jarRepositories.xml
-../.idea/java-project-71.iml
-../.idea/misc.xml
-../.idea/modules.xml
-../.idea/modules/
-../.idea/vcs.xml
-app.iml
-../.idea
+app/.gradle
+app/.idea
+app/app.iml
+app/build
