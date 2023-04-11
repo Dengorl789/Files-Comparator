@@ -2,7 +2,7 @@
 /shelf/
 /.idea/workspace.xml
 ../.idea
-.gradle
+app/.gradle
 .idea
 build
 ../.idea/compiler.xml
