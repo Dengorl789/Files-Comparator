@@ -17,11 +17,11 @@ public class DifferTest {
     private final String path4 = "src/test/resources/SecondFile.yml";
 
     private final Path pathStylish =
-            Paths.get("src/test/resources/expected/testStylish").toAbsolutePath().normalize();
+            Paths.get("src/test/resources/expected/testSTYLISH").toAbsolutePath().normalize();
     private final Path pathPlain =
             Paths.get("src/test/resources/expected/testPlain").toAbsolutePath().normalize();
     private final Path pathJson =
-            Paths.get("src/test/resources/expected/testJson").toAbsolutePath().normalize();
+            Paths.get("src/test/resources/expected/testJSON").toAbsolutePath().normalize();
 
     public DifferTest() throws IOException {
     }

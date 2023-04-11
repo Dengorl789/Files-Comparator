@@ -1,8 +1,32 @@
-run-dist:
-	./build/install/app/bin/app
+.DEFAULT_GOAL := build-run
 
-help:
-	./build/install/app/bin/app -h
+clean:
+	sudo gradle clean
+
+build:
+	sudo gradle clean build
+
+install:
+	sudo gradle clean install
+
+run-dist:
+	./build/install/java-package/bin/java-package
+
+run:
+	sudo gradle run
+
+test:
+	sudo gradle test
+
+report:
+	sudo gradle jacocoTestReport
 
 lint:
-	gradle checkstyleMain checkstyleTest
+	sudo gradle checkstyleMain checkstyleTest
+
+update-deps:
+	sudo gradle useLatestVersions
+
+build-run: build run
+
+.PHONY: build

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.Objects;
 
-public class GenerateDifferences {
+public class DifferenceFinder {
     public static List<Map<String, Object>> differ(Map<String, Object> map1, Map<String, Object> map2) {
         List<Map<String, Object>> result = new ArrayList<>();
         Set<String> keysSet = new TreeSet<>(map1.keySet());

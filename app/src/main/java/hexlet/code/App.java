@@ -3,21 +3,22 @@ package hexlet.code;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Parameters;
+import picocli.CommandLine.Option;
 
 import java.util.concurrent.Callable;
 
 @Command(name = "genDiff", mixinStandardHelpOptions = true, version = "genDiff 1.0",
         description = "Compares two configuration files and shows a difference.")
-public class App implements Callable<Integer> {
-    @Parameters(description = "path to first file")
-    private static String filepath1;
+public final class App implements Callable<Integer> {
+    @Parameters(description = "path to first file.")
+    private String filepath1;
     @Parameters(description = "path to second file")
-    private static String filepath2;
+    private String filepath2;
 
-    @CommandLine.Option(names = {"-f", "--format"},
+    @Option(names = {"-f", "--format"},
             description = "output format: stylish, plain, json, no-format [default: ${DEFAULT-VALUE}]",
             defaultValue = "stylish")
-    private static String format;
+    private String format;
 
     @Override
     public Integer call() throws Exception {

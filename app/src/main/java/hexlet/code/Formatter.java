@@ -18,8 +18,7 @@ public class Formatter {
             case "json":
                 return Json.formatJson(diffs);
             default:
-                System.out.println("Format" + format + "is not correct!");
+                throw new IOException("Format " + format + " does not exsit!");
         }
-        return Stylish.formatStylish(diffs);
     }
 }
