@@ -20,7 +20,7 @@ public class Differ {
     }
     public static Map<String, Object> getFileData(String pathToFile) throws Exception {
         Path path = Paths.get(pathToFile.substring(pathToFile.indexOf("src")));
-        String fileData = Files.readString(path);
+        String fileData = Files.readString(path).trim();
         String fileType = pathToFile.substring(pathToFile.indexOf(".") + 1);
         return Parser.parser(fileData, fileType);
     }

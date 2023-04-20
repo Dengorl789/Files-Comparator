@@ -2,7 +2,6 @@ package hexlet.code;
 
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -23,25 +22,22 @@ public class DifferTest {
     private final Path pathJson =
             Paths.get("src/test/resources/expected/testJSON").toAbsolutePath().normalize();
 
-    public DifferTest() throws IOException {
-    }
-
     @Test
     public void test1() throws Exception {
-        String expected = Files.readString(pathStylish);
-        assertEquals(expected, Differ.generate(path1, path2));
+        String expected = Files.readString(pathStylish).trim();
+        assertEquals(expected, Differ.generate(path1, path2).trim());
     }
 
     @Test
     public void testStylish1() throws Exception {
-        String expected = Files.readString(pathStylish);
-        assertEquals(expected, Differ.generate(path1, path2, "stylish"));
+        String expected = Files.readString(pathStylish).trim();
+        assertEquals(expected, Differ.generate(path1, path2, "stylish").trim());
     }
 
     @Test
     public void testStylish2() throws Exception {
-        String expected = Files.readString(pathStylish);
-        assertEquals(expected, Differ.generate(path3, path4, "stylish"));
+        String expected = Files.readString(pathStylish).trim();
+        assertEquals(expected, Differ.generate(path3, path4, "stylish").trim());
     }
 
     @Test

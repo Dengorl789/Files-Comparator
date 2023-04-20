@@ -15,7 +15,6 @@ public class Parser {
     }
 
     private static ObjectMapper chooseFormat(String fileType) {
-        ObjectMapper oMapper = new ObjectMapper();
         switch (fileType) {
             case("json"):
                 return new ObjectMapper();

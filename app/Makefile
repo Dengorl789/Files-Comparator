@@ -13,7 +13,7 @@ run-dist:
 	./build/install/java-package/bin/java-package
 
 run:
-	sudo ./gradlew run
+	sudo gradle run
 
 test:
 	sudo gradle test
