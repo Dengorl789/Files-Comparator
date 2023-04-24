@@ -1,0 +1,9 @@
+{
+    "intKey": 1,
+    "charKey": "a",
+    "stringKey": "abc",
+    "nullKey": null,
+    "doubleKey": 0.5,
+    "booleanKey": true
+}
+
