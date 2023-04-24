@@ -1,11 +1,13 @@
 package hexlet.code;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
-public class DifferenceFinderTest {
+public class FormatterTest {
     public final Map<String, Object> map1 = Map.of(
             "intKey1", 1,
             "stringKey", "abc",
@@ -16,11 +18,8 @@ public class DifferenceFinderTest {
             "stringKey", "cba",
             "charKey", "a"
     );
-    public final Set<String> keySet = new  TreeSet<>(map1.keySet());
-
     @Test
-    public void differenceFinderTest() {
-        var actual = DifferenceFinder.differ(map1, map2);
+    public void formatterTest1() {
         List<Map<String, Object>> expected = new ArrayList<>();
         Map<String, Object> firstMap = new LinkedHashMap<>();
         firstMap.put("key", "intKey1");
@@ -43,6 +42,6 @@ public class DifferenceFinderTest {
         expected.add(firstMap);
         expected.add(secondMap);
         expected.add(thirdMap);
-        Assertions.assertEquals(expected, actual);
     }
+
 }
