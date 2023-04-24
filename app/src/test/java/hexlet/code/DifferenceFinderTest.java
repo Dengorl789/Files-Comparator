@@ -16,7 +16,6 @@ public class DifferenceFinderTest {
             "stringKey", "cba",
             "charKey", "a"
     );
-    public final Set<String> keySet = new  TreeSet<>(map1.keySet());
 
     @Test
     public void differenceFinderTest() {
