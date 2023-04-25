@@ -3,15 +3,19 @@ package hexlet.code;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
 
 public class DifferenceFinderTest {
-    public final Map<String, Object> map1 = Map.of(
+    private final Map<String, Object> map1 = Map.of(
             "intKey1", 1,
             "stringKey", "abc",
             "charKey", "a"
     );
-    public final Map<String, Object> map2 = Map.of(
+    private final Map<String, Object> map2 = Map.of(
             "intKey2", 2,
             "stringKey", "cba",
             "charKey", "a"
@@ -38,7 +42,7 @@ public class DifferenceFinderTest {
         fourthMap.put("key", "charKey");
         fourthMap.put("oldValue", map1.get("charKey"));
         fourthMap.put("status", "unchanged");
-        expected.add((fourthMap));
+        expected.add(fourthMap);
         expected.add(firstMap);
         expected.add(secondMap);
         expected.add(thirdMap);

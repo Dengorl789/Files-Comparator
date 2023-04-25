@@ -18,7 +18,7 @@ public class Formatter {
             case "json":
                 return Json.formatJson(diffs);
             default:
-                throw new IOException("Format " + format + " does not exsit!");
+                throw new IOException("Format " + format + " does not exist!");
         }
     }
 }

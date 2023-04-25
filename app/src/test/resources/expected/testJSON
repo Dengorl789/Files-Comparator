@@ -48,13 +48,6 @@
   "newValue" : [ 4, 5, 6 ],
   "status" : "added"
 }, {
-  "key" : "obj1",
-  "newValue" : {
-    "nestedKey" : "value",
-    "isNested" : true
-  },
-  "status" : "added"
-}, {
   "key" : "setting1",
   "oldValue" : "Some value",
   "newValue" : "Another value",
