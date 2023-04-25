@@ -14,13 +14,13 @@ public class Parser {
         return objectmapper.readValue(data, new TypeReference<>() { });
     }
 
-    private static ObjectMapper chooseFormat(String fileType) {
+    public static ObjectMapper chooseFormat(String fileType) {
         switch (fileType) {
             case("json"):
                 return new ObjectMapper();
             case ("yml"):
                 return new ObjectMapper(new YAMLFactory());
-            default: throw new NoSuchElementException();
+            default: throw new NoSuchElementException("There is no such filetype!");
         }
 
 
