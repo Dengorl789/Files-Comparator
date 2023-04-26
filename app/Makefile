@@ -1,10 +1,10 @@
 .DEFAULT_GOAL := build-run
 
 clean:
-	sudo gradle clean
+	./gradlew clean
 
 build:
-	sudo gradle clean build
+	./gradlew clean build
 
 install:
 	./gradlew clean install
