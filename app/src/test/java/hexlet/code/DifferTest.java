@@ -20,11 +20,11 @@ public class DifferTest {
 
 
     private final Path pathStylish =
-            Paths.get("src/test/resources/expected/testSTYLISH.txt").toAbsolutePath().normalize();
+            Paths.get("src/test/resources/expected/testSTYLISH").toAbsolutePath().normalize();
     private final Path pathPlain =
-            Paths.get("src/test/resources/expected/testPlain.txt").toAbsolutePath().normalize();
+            Paths.get("src/test/resources/expected/testPlain").toAbsolutePath().normalize();
     private final Path pathJson =
-            Paths.get("src/test/resources/expected/testJSON.txt").toAbsolutePath().normalize();
+            Paths.get("src/test/resources/expected/testJSON").toAbsolutePath().normalize();
 
     @Test
     public void test1() throws Exception {
