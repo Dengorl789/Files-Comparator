@@ -7,25 +7,25 @@ build:
 	sudo gradle clean build
 
 install:
-	sudo gradle clean install
+	./gradlew clean install
 
 run-dist:
 	./build/install/java-package/bin/java-package
 
 run:
-	sudo gradle run
+	./gradlew run
 
 test:
-	sudo gradle test
+	./gradlew test
 
 report:
-	sudo gradle jacocoTestReport
+	./gradlew jacocoTestReport
 
 lint:
-	sudo gradle checkstyleMain checkstyleTest
+	./gradlew checkstyleMain checkstyleTest
 
 update-deps:
-	sudo gradle useLatestVersions
+	./gradlew useLatestVersions
 
 build-run: build run
 
