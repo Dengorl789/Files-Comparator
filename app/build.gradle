@@ -22,6 +22,12 @@ test {
     useJUnitPlatform()
     finalizedBy jacocoTestReport
 }
+
+jacocoTestReport {
+    reports {
+        xml.required = true
+    }
+}
 application {
     mainClass = 'hexlet.code.App'
 }
@@ -30,6 +36,3 @@ compileJava {
     options.compilerArgs += ["-Aproject=${project.group}/${project.name}"]
 }
 
-jacocoTestReport {
-    dependsOn test
-}
