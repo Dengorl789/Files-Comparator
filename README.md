@@ -6,13 +6,13 @@ Help information
 
 By cloning this repository, you get a file comparator of .json and .yml types of files.
 Build project with Gradle by command "make build", then "make install" then use next command from app directory to compare two files:
-./build/install/app/bin/app "filepath1" "filepath2"
+`./build/install/app/bin/app "filepath1" "filepath2"`
 
 Also you can choose format of a data been shown: plain, stylish of Json. 
 Just add corresponding type after -f flag.
-./build/install/app/bin/app -f *format* "filepath1" "filepath2"
+`./build/install/app/bin/app -f *format* "filepath1" "filepath2"`
 
 Also you can use following console command for more help
-./build/install/app/bin/app -h
+`./build/install/app/bin/app -h`
 
 
